@@ -4,6 +4,7 @@ from rb_class import *
 from menu import *
 from txt_rw import *
 import argparse
+from config import Users, Passwords, Ports
 
 """
 # Initialize parser
@@ -30,9 +31,10 @@ LTS = 'version: 6.47.10 (long-term)'
 FW = 'current-firmware: 6.47.10'
 
 Hosts = [] #args.targets
-Ports = [22]
-Users = ['admin']
-Passwords = ['glock9mm']
+
+#Ports = [22]
+#Users = ['admin']
+#Passwords = ['glock9mm']
 
 """
 if args.users != None:

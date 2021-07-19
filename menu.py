@@ -1,7 +1,7 @@
 from txt_rw import *
 from pathlib import *
 from pasta import create_routeros_folder
-import consolemenu
+# import consolemenu
 
 
 
