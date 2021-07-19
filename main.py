@@ -4,7 +4,7 @@ from rb_class import *
 from menu import *
 from txt_rw import *
 import argparse
-from config import Users, Passwords, Ports
+from config import Users, Passwords, Ports, Debug
 
 """
 # Initialize parser
@@ -26,7 +26,7 @@ print(args)
 """
 
 
-Debug = True
+
 LTS = 'version: 6.47.10 (long-term)'
 FW = 'current-firmware: 6.47.10'
 
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     elif option == '2':
         values = menu_manual('Insira um endereço de IP, Insira zero para parar: ')
         for value in values:
-            Hosts.append(str(values.removesuffix("\n")))
+            Hosts.append(str(value.removesuffix("\n")))
         if Debug:
             print(Hosts)
     else:
@@ -106,8 +106,8 @@ if __name__ == '__main__':
     ## [2] Inserir manualmente
     elif option == '2':
         values = menu_manual('Insira um Usuário, Insira zero para parar: ')
-        for values in values:
-            Users.append(str(values.removesuffix("\n")))
+        for value in values:
+            Users.append(str(value.removesuffix("\n")))
         if Debug:
             print(Users)
     print()
@@ -131,8 +131,8 @@ if __name__ == '__main__':
     ## [2] Inserir manualmente
     elif option == '2':
         values = menu_manual('Insira uma senha, Insira zero para parar: ')
-        for values in values:
-            Passwords.append(str(values.removesuffix("\n")))
+        for value in values:
+            Passwords.append(str(value.removesuffix("\n")))
         if Debug:
             print(Passwords)
     print()
@@ -142,8 +142,8 @@ if __name__ == '__main__':
 
     if option == '1':
         values = menu_manual('Insira uma porta, Insira zero para parar: ')
-        for values in values:
-            Ports.append(str(values.removesuffix("\n")))
+        for value in values:
+            Ports.append(str(value.removesuffix("\n")))
         if Debug:
             print(Ports)
     print()

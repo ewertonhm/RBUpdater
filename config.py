@@ -1,4 +1,5 @@
 ###############
+Debug = True
 Ports = []
 Users = []
 Passwords = []
@@ -13,3 +14,4 @@ Passwords.append('glock9mm')
 
 Ports.append('22')
 # Ports.append('2222')
+
